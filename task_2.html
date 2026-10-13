@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 - Conference Registration Form</title>
+</head>
+<body>
+
+    <h2 align="center">Conference Registration Form</h2>
+
+    <form action="#" method="POST">
+        <table border="0" cellpadding="8" align="center">
+            <tr>
+                <td align="right"><label for="fullname"><strong>Full Name:</strong></label></td>
+                <td align="left">
+                    <!-- required forces user to fill this field -->
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="email"><strong>Email Address:</strong></label></td>
+                <td align="left">
+                    <input type="email" id="email" name="email" placeholder="Enter your email addres" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="age"><strong>Age:</strong></label></td>
+                <td align="left">
+                    <!-- min="18" and max="99" restricts valid inputs -->
+                    <input type="number" id="age" name="age" value="18" min="18" max="99" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><strong>Gender:</strong></td>
+                <td align="left">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="country"><strong>Country of Residence:</strong></label></td>
+                <td align="left">
+                    <select id="country" name="country">
+                        <option value="Malaysia" selected>Malaysia</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"><strong>Areas of Interest:</strong></td>
+                <td align="left">
+                    <input type="checkbox" id="sd" name="interest" value="Software Development">
+                    <label for="sd">Software Development</label><br>
+                    <input type="checkbox" id="ds" name="interest" value="Data Science">
+                    <label for="ds">Data Science</label><br>
+                    <input type="checkbox" id="cs" name="interest" value="Cybersecurity">
+                    <label for="cs">Cybersecurity</label><br>
+                    <input type="checkbox" id="ai" name="interest" value="Artificial Intelligence">
+                    <label for="ai">Artificial Intelligence</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"><strong>Experience Level:</strong></td>
+                <td align="left">
+                    <input type="radio" id="beginner" name="exp_level" value="Beginner">
+                    <label for="beginner">Beginner</label><br>
+                    <input type="radio" id="intermediate" name="exp_level" value="Intermediate">
+                    <label for="intermediate">Intermediate</label><br>
+                    <input type="radio" id="advanced" name="exp_level" value="Advanced">
+                    <label for="advanced">Advanced</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"><label for="comments"><strong>Comments or Questions:</strong></label></td>
+                <td align="left">
+                    <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Any comments or questions?"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
